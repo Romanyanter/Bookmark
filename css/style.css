@@ -1,0 +1,93 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--color-background);
+}
+html{
+  font-size: 16px;
+}
+:root{
+  --color-background:#F7ECDE;
+}
+.Bookmarker{
+  font-family:cursive;
+  display: flex;
+  justify-content: center;
+  
+
+}
+.Bookmarker h1{
+  position: relative;
+  
+}
+.Bookmarker h1::before{
+  content: "";
+  width: 100%;
+  height: 50%;
+  top: 60%;
+  background-color: #fec260;
+  position: absolute;
+  z-index: -1;
+  transition: 0.3s all;
+  animation-name: Bookmarker;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Bookmarker{
+  0%{
+    height: 50%;
+    top: 60%;
+  }
+  20%{
+    height: 70%;
+    top: 30%;
+  }
+  40%{
+    height: 90%;
+    top: 10%;
+  }
+  60%{
+    height: 100%;
+    top: 0%;
+  }
+  80%{
+    height: 90%;
+    top: 10%;
+  }
+  90%{
+    height: 70%;
+    top: 30%;
+  }
+  100%{
+    height: 50%;
+    top: 60%;
+  }
+}
+.Form{
+  border-width: 2px 0 2px 0;
+  border-style:dashed;
+  border-color: black;
+  width: 100%;
+  
+
+}
+.Form .header{
+  display: flex;
+  justify-content: center;
+}
+.Form .header h2{
+  color:#4AA65A;
+}
+.Form .header .two{
+  color: #B1AB49;
+}
+.Form .header .one{
+  color: #3FA55B;
+}
+button{
+  cursor: pointer;
+}
